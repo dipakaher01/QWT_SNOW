@@ -1,0 +1,16 @@
+version: 2
+ 
+models:
+  - name: stg_customers
+    columns:
+      - name: customerid
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_employees
+    columns:
+      - name: empid
+        tests:
+          - is_even
+ 
