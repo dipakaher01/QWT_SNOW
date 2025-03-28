@@ -20,7 +20,7 @@
             e.empid as employee_id, e.first_name as employee_name, e.title as employee_title,
             m.employee_id, m.employee_name, m.employee_title
           from {{ref('stg_employees')}} as e join managers as m
-            on e.reportsto = m.employee_id
+            on e.REPORTS_TO = m.employee_id
       ),
  
       offices (officeid, officecity, officestate, officecountry)
