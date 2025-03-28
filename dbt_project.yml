@@ -53,5 +53,5 @@ models:
  
   
   dq_tools:
-    +schema:  "{{env_var('DBt_SOURCEDB', 'QWT_ANALYTICS_DEV')}}"
+    +schema:  "{{env_var('DBT_SOURCEDB', 'QWT_ANALYTICS_DEV')}}"
  
